@@ -15,7 +15,7 @@
             padding: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 50%; /* Largura máxima de 90% */
             margin: 0 auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
@@ -65,6 +65,16 @@
             font-size: 1.0em;
             margin-top: 20px;
         }
+        /* Estilos específicos para telas menores que 600px de largura (por exemplo, smartphones) */
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 100%; /* Defina a largura máxima como 100% para telas menores */
+            }
+            .left-images,
+            .right-images {
+                width: 40%; /* Aumenta a largura das imagens para ocupar menos espaço */
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,4 +94,3 @@
     </div>
 </body>
 </html>
-
